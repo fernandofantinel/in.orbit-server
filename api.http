@@ -1,0 +1,24 @@
+POST http://localhost:3333/goals
+Content-Type: application/json
+
+{
+  "title": "Acordar cedo",
+  "desiredWeeklyFrequency": 5
+}
+
+###
+
+GET http://localhost:3333/pending-goals
+
+###
+
+POST http://localhost:3333/completions
+Content-Type: application/json
+
+{
+  "goalId": "a [goalID] here"
+}
+
+###
+
+GET http://localhost:3333/summary
